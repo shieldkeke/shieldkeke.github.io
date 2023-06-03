@@ -1,14 +1,14 @@
 <div>
-<table border="0">
+<table border="0" frame="void">
   <tr>
-    <td width="50%">
+    <td width="50%" align="left">
       <h1>陈烨柯</h1>
       <p><b>浙江大学</b></p>
       <p><b>电气工程学院 自动化 在读本科生</b></p>
       <p><b>邮箱：chenyeke@zju.edu.com</b></p>
 <!--       <p><a href="/index-en.html">English Version</a></p> -->
     </td>
-    <td width="20%">
+    <td width="25%" align="center">
       <img src="/cyk-pic.jpg" width="100%">
     </td>
   </tr>
