@@ -1,19 +1,26 @@
 <div>
 <table border="0" frame="void">
   <tr>
-    <td width="50%" align="left">
+    <td width="50%" align="left"  rowspan="2">
       <h1>陈烨柯</h1>
       <p><b>浙江大学</b></p>
-      <p><b>电气工程学院 自动化 在读本科生</b></p>
+       <p><b>电气工程学院 自动化 在读本科生</b></p>
       <p><b>邮箱：chenyeke@zju.edu.com</b></p>
-<!--       <p><a href="/index-en.html">English Version</a></p> -->
     </td>
-    <td width="25%" align="center">
+    <td width="25%" align="center" rowspan="2">
       <img src="/cyk-pic.jpg" width="100%">
     </td>
   </tr>
+  <tr>
+<!--       <td width="50%" align="left"> -->
+     
+<!--       <p><a href="/index-en.html">English Version</a></p> -->
+<!--     </td> -->
+  </tr>
 </table>
 </div>
+
+
 
 <!-- ---
 
