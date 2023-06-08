@@ -1,5 +1,5 @@
 <div>
-<table border="">
+<table  style="border-collapse: collapse; border: none;">
   <tbody>
   <tr>
     <td width="50%" align="left" rowspan="2">
@@ -11,7 +11,7 @@
   </tr>
   <tr>
     <td width="15%" align="center" >
-      <img src="/cyk-pic.jpg" width="80%" >
+      <img src="/cyk-pic.jpg" width="100%" >
     </td>
   </tr>
    </tbody>
