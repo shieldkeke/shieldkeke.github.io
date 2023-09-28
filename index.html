@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Yeke Chen</title>
+
+    <meta name="author" content="Yeke Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>"> -->
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                
+                <!--------------------------------- profile -------------------------------->
+                <p class="name" style="text-align: center;">
+                  Yeke Chen
+                </p>
+                <p>I am an undergraduate student in Automation at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>. My overall GPA is 3.94/4.0, 89.8/100, and my ranking is 3/58.
+                </p>
+                <p>
+                 During my undergraduate years, I was a team member of <a href="https://github.com/ZJU-RoboCup">ZJUNlict</a> from 6/2022 to 6/2023.I am a research intern at <a href="https://github.com/ZJU-Robotics-Lab">ZJU Robotics Lab</a> advised by <a href="https://ywang-zju.github.io/">Yue Wang</a> and <a href="https://person.zju.edu.cn/en/rongxiong">Rong Xiong</a> now.
+                </p>
+                <p>
+                  I'm interested in robotics and autonomous driving.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:chenyeke@zju.edu.cn">Email</a> &nbsp;/&nbsp;
+                  <a href="data/YekeChen-CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/shieldkeke">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/cyk-pic2.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/cyk-circle.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          
+          
+          <!------------------------------ research -------------------------------------->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research and Projects</h2>
+                <!-- <p>
+                  I'm interested in ... Representative papers are <span class="highlight">highlighted</span>.
+                </p> -->
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+         
+      
+      <!-------------------- CICT ---------------->
+
+      <tr onmouseout="cict_stop()" onmouseover="cict_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='cict'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/cict.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <div id="cict_still">
+            <img src='images/cict.png' width="160" >
+            </div>
+          </div>
+          <script type="text/javascript">
+            function cict_start() {
+              document.getElementById('cict').style.opacity = "1";
+              document.getElementById('cict_still').style.display = 'none';
+            }
+
+            function cict_stop() {
+              document.getElementById('cict').style.opacity = "0";
+              document.getElementById('cict_still').style.display = 'inline';
+            }
+            cict_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+     
+            <span class="papertitle">Continuous Trajectory Generation for Autonomous Driving</span>
+          <br>
+          <em>SRTP(Student Research Training Program)</em> , Zhejiang University, 2022-2023
+          <br>
+          Advised by <a href="https://person.zju.edu.cn/en/rongxiong">Rong Xiong</a>
+          
+          <p></p>
+          <p>
+            We designed and trained a two-stage network, which firstly generates feasible domain based on rough navigation and RGB images, and then fuses point cloud information to generate continuous trajectory expressions. Finally, we realized vehicle autonomous driving in CARLA.
+          </p>
+        </td>
+      </tr>
+
+
+      <!-------- zkcup ------->
+
+      <tr onmouseout="zkcup_stop()" onmouseover="zkcup_start()">
+        <td style="padding:20px;width: 25%;vertical-align:middle">
+          <div id='zkcup' class='hidden'><img src="images/zkcup.gif" width="100%"></div>
+          <div id='zkcupstill'>
+            <a href="images/zkcup.gif"><img src="images/zkcup.png" width="100%"></a>
+          </div>
+          <script type="text/javascript">
+            function zkcup_start() {
+              document.getElementById('zkcup').style.display = 'inline';
+              document.getElementById('zkcupstill').style.display = 'none';
+            }
+
+            function zkcup_stop() {
+              document.getElementById('zkcup').style.display = 'none';
+              document.getElementById('zkcupstill').style.display = 'inline';
+            }
+            zkcup_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Supermarket Shopping Robot</span>
+          <br>
+          <em>Zhejiang University Robot Competition & Zhejiang Robot Competition</em>, 2022
+          <br>
+          
+          <a href="https://github.com/shieldkeke/zk2021">code&page</a>
+          <p>
+          We Designed the robot from scratch and implemented functions such as object detection, multi-device communication, object grasping, and line-following.
+          </p>
+        </td>
+      </tr>
+
+      <!---------- zjunlict ---------->
+      <tr onmouseout="robocup_stop()" onmouseover="robocup_start()">
+        <td style="padding:20px;width: 25%;vertical-align:middle">
+          <div id='robocup' class='hidden'><img src="images/robocup.gif" width="100%"></div>
+          <div id='robocupstill'>
+            <a href="images/robocup.gif"><img src="images/robocup.png" width="100%"></a>
+          </div>
+          <script type="text/javascript">
+            function robocup_start() {
+              document.getElementById('robocup').style.display = 'inline';
+              document.getElementById('robocupstill').style.display = 'none';
+            }
+
+            function robocup_stop() {
+              document.getElementById('robocup').style.display = 'none';
+              document.getElementById('robocupstill').style.display = 'inline';
+            }
+            robocup_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Soccer Robot</span>
+          <br>
+          <em>Zhejiang Robot Competition</em>, 2022; <em>China Robot Competition/Robocup China</em>, 2023
+          <br>
+          
+          <a href="https://ssl.robocup.org/">Introduction</a> / <a href="images/robocup-video1.mp4">video1</a> / <a href="images/robocup-video-non-zero-speed-ball-interception.mp4">video2</a>
+          <p>
+          During my year in the team, I was responsible for developing the muti-vehicle-ball-passing-point calculating module based on OpenAcc.
+          I'm also responsible for refining the ball interception module and completing the mapping from velocity to force to achieve the regulation of ball speed.
+          </p>
+        </td>
+      </tr>
+
+
+      <!----------- quadruped robot --------->
+      <tr onmouseout="quadruped_stop()" onmouseover="quadruped_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='quadruped'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/quadruped.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <div id="quadruped_still">
+            <img src='images/quadruped.png' width="160" >
+            </div>
+          </div>
+          <script type="text/javascript">
+            function quadruped_start() {
+              document.getElementById('quadruped').style.opacity = "1";
+              document.getElementById('quadruped_still').style.display = 'none';
+            }
+
+            function quadruped_stop() {
+              document.getElementById('quadruped').style.opacity = "0";
+              document.getElementById('quadruped_still').style.display = 'inline';
+            }
+            quadruped_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <!-- change the ongoing color to blue -->
+          <span class="papertitle"><font color="blue">(ONGOING)</font> Quadruped Robot</span>
+          <br>
+          Advised by <a href="https://github.com/TwilightZrui/">Rui Zhang</a> and <a href="https://ywang-zju.github.io/">Yue Wang</a> 
+          <br>
+          <p></p>
+          <p>
+            I learnt the foothold planning algorithm for quadruped robots based on elevation map, and I'm trying to implement a learning-based method for foothold planning with single frame input.
+          </p>
+        </td>
+      </tr>
+
+      <!---------- robot_nav ---------->
+      <tr onmouseout="nav_stop()" onmouseover="nav_start()">
+        <td style="padding:20px;width: 25%;vertical-align:middle">
+          <div class="one">
+          <div id='robot-nav' class='hidden'><img src="images/robot-nav.gif" width="100%"></div>
+          <div id='robot-nav-still'>
+            <a href="images/robot-nav.gif"><img src="images/robot-nav.png" width="100%"></a>
+          </div>
+        </div>
+          <script type="text/javascript">
+            function nav_start() {
+              document.getElementById('robot-nav').style.display = 'inline';
+              document.getElementById('robot-nav-still').style.display = 'none';
+            }
+
+            function nav_stop() {
+              document.getElementById('robot-nav').style.display = 'none';
+              document.getElementById('robot-nav-still').style.display = 'inline';
+            }
+            nav_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Path Planning and Tracking</span>
+          <br>
+          <em>Course Project</em>, 2023
+          <br>
+          <a href="https://github.com/shieldkeke/robot_nav">code&page</a>
+          <p>
+          I realized path planning of RRT*, A* and JPS; realized DWA and simple trajectory tracking.
+          </p>
+        </td>
+      </tr>
+      
+          <!---------- space robot ---------->
+          <tr onmouseout="space_stop()" onmouseover="space_start()">
+            <td style="padding:20px;width: 25%;vertical-align:middle">
+              <div class="one">
+              <div id='space' class='hidden'><img src="images/space.gif" width="100%"></div>
+              <div id='spacestill'>
+                <a href="images/space.gif"><img src="images/space.png" width="100%"></a>
+              </div>
+              </div>
+              <script type="text/javascript">
+                function space_start() {
+                  document.getElementById('space').style.display = 'inline';
+                  document.getElementById('spacestill').style.display = 'none';
+                }
+    
+                function space_stop() {
+                  document.getElementById('space').style.display = 'none';
+                  document.getElementById('spacestill').style.display = 'inline';
+                }
+                space_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <span class="papertitle">Space Robot</span>
+              <br>
+              <em>Course Project</em>, 2023
+              <br>
+              <a href="https://github.com/shieldkeke/space_robot">code&page</a>
+              <p>
+              We completed the inverse kinematics code of space robot and the trajectory planning code of joint space based on polynomial interpolation.
+              </p>
+            </td>
+          </tr>
+    
+    </tbody></table>
+
+
+          <!------------------------- Awards ------------------------------>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Awards</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle"><img src="images/award1.jpg" width="100%"></td>
+              <td width="75%" valign="center">
+                China Robot Competition/Robocup China (SSL) -Second Prize  
+              </td>
+              <td width="10%" valign="center">
+                11/2022
+              </td>
+              
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award2.jpg" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang Robot Competition-First Prize 
+              </td>
+              <td width="10%" valign="center">
+                5/2023
+              </td>
+            </tr>
+          
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award3.jpg" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang Robot Competition-Second Prize 
+              </td>
+              <td width="10%" valign="center">
+                8/2022
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award4.jpg" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang Robot Competition-Third Prize 
+              </td>
+              <td width="10%" valign="center">
+                7/2021
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award5.png" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang University Robot Competition-First Prize
+              </td>
+              <td width="10%" valign="center">
+                6/2021
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award5.png" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang University Robot Competition-First Prize
+              </td>
+              <td width="10%" valign="center">
+                6/2021
+              </td>
+            </tr>            
+
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award6.png" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang Provincial Government Scholarship
+              </td>
+              <td width="10%" valign="center">
+                12/2021
+              </td>
+            </tr>       
+
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award7.png" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang University Scholarship-Second Prize
+              </td>
+              <td width="10%" valign="center">
+                3/2022
+              </td>
+            </tr>  
+            
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award8.png" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang Provincial Government Scholarship
+              </td>
+              <td width="10%" valign="center">
+                12/2022
+              </td>
+            </tr>       
+
+            <tr>
+              <td style="padding:20px;width:15%;vertical-align:middle">
+                <img src="images/award9.png" width="100%">
+              </td>
+              <td width="75%" valign="center">
+                Zhejiang University Scholarship-Second Prize
+              </td>
+              <td width="10%" valign="center">
+                2/2023
+              </td>
+            </tr>  
+            
+          </tbody></table>
+
+          <!-------------- about me ----------->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Personal Ability</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td width="100%" valign="center">
+                <strong>skills:</strong> python/C++/MATLAB/ROS/Pytorch/SolidWorks/OpenCV/CUDA C
+              </td>
+             
+            </tr>
+            
+          </tbody></table>
+         
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <p style="text-align:center">
+                  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=w30QJkkRVYCt4YcDLOYCy0K-Eui2NerSl5ARoMd9ge4&cl=ffffff&w=a"></script>
+                  <div id="mmvmap" style="width: 100%; height: 300px;"></div>
+                  
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          
+          <!------------------- end -------------------->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Last updated: 28/9/2023
+                  <br>
+                  Thanks <a href="https://jonbarron.info/">Dr. Jon Barron</a> for sharing the source code of his personal page.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
