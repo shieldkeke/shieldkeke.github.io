@@ -62,8 +62,116 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+              <!----------- aerial robot --------->
+      <!-- <tr onmouseout="aerial_stop()" onmouseover="aerial_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='aerial'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/aerial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <div id="aerial_still">
+            <img src='images/aerial.png' width="160" >
+            </div>
+          </div>
+          <script type="text/javascript">
+            function aerial_start() {
+              document.getElementById('aerial').style.opacity = "1";
+              document.getElementById('aerial_still').style.display = 'none';
+            }
+
+            function aerial_stop() {
+              document.getElementById('aerial').style.opacity = "0";
+              document.getElementById('aerial_still').style.display = 'inline';
+            }
+            aerial_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle"><font color="blue">(ONGOING)</font> Aerial Robot</span>
+          <br>
+          Advised by Prof. <a href="http://zju-fast.com/fei-gao/">Fei Gao</a> and Senior <a href="https://github.com/ModernGangster">Tianyue Wu</a>
+          <br>
+          <p></p>
+          <p>
+            We have preliminarily completed a reinforcement learning-based upper layer planning algorithm for UAVs, 
+            which realizes adaptive variable-speed flight of UAVs in complex environments.
+          </p>
+        </td>
+      </tr> -->
+
+      <!----------- quadruped robot --------->
+      <tr onmouseout="quadruped_stop()" onmouseover="quadruped_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='quadruped'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/quadruped.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <div id="quadruped_still">
+            <img src='images/quadruped.png' width="160" >
+            </div>
+          </div>
+          <script type="text/javascript">
+            function quadruped_start() {
+              document.getElementById('quadruped').style.opacity = "1";
+              document.getElementById('quadruped_still').style.display = 'none';
+            }
+
+            function quadruped_stop() {
+              document.getElementById('quadruped').style.opacity = "0";
+              document.getElementById('quadruped_still').style.display = 'inline';
+            }
+            quadruped_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <!-- change the ongoing color to blue -->
+          <span class="papertitle"><font color="blue">(ONGOING)</font> Quadruped Robot</span>
+          <br>
+          Advised by Prof. <a href="https://ywang-zju.github.io/">Yue Wang</a> and Senior <a href="https://github.com/TwilightZrui/">Rui Zhang</a>
+          <br>
+          <p></p>
+          <p>
+          We realized online COM trajectory and foothold optimization for quadruped locomotion. Besides, we proposed an end-to-end trajectory and foothold planning method based on single frame vision and reinforcement learning for quadruped robot.
+          </p>
+        </td>
+      </tr>    
+
+       <!---------- zjunlict ---------->
+       <tr onmouseout="robocup_stop()" onmouseover="robocup_start()">
+        <td style="padding:20px;width: 25%;vertical-align:middle">
+          <div id='robocup' class='hidden'><img src="images/robocup.gif" width="100%"></div>
+          <div id='robocupstill'>
+            <a href="images/robocup.gif"><img src="images/robocup.png" width="100%"></a>
+          </div>
+          <script type="text/javascript">
+            function robocup_start() {
+              document.getElementById('robocup').style.display = 'inline';
+              document.getElementById('robocupstill').style.display = 'none';
+            }
+
+            function robocup_stop() {
+              document.getElementById('robocup').style.display = 'none';
+              document.getElementById('robocupstill').style.display = 'inline';
+            }
+            robocup_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Soccer Robot</span>
+          <br>
+          <em>Zhejiang Robot Competition</em>, 2022; <em>China Robot Competition/Robocup China Open</em>, 2023
+          <br>
           
-         
+          <a href="https://ssl.robocup.org/">Introduction</a> / <a href="images/robocup-video1.mp4">video1</a> / <a href="images/robocup-video-non-zero-speed-ball-interception.mp4">video2</a>
+          <p>
+          During my year in the team, I was responsible for developing the muti-vehicle-ball-passing-point calculating module based on OpenAcc.
+          I'm also responsible for refining the ball interception module and completing the mapping from velocity to force to achieve the regulation of ball speed.
+          </p>
+        </td>
+      </tr>   
       
       <!-------------------- CICT ---------------->
 
@@ -141,115 +249,9 @@
         </td>
       </tr>
 
-      <!---------- zjunlict ---------->
-      <tr onmouseout="robocup_stop()" onmouseover="robocup_start()">
-        <td style="padding:20px;width: 25%;vertical-align:middle">
-          <div id='robocup' class='hidden'><img src="images/robocup.gif" width="100%"></div>
-          <div id='robocupstill'>
-            <a href="images/robocup.gif"><img src="images/robocup.png" width="100%"></a>
-          </div>
-          <script type="text/javascript">
-            function robocup_start() {
-              document.getElementById('robocup').style.display = 'inline';
-              document.getElementById('robocupstill').style.display = 'none';
-            }
+     
 
-            function robocup_stop() {
-              document.getElementById('robocup').style.display = 'none';
-              document.getElementById('robocupstill').style.display = 'inline';
-            }
-            robocup_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">Soccer Robot</span>
-          <br>
-          <em>Zhejiang Robot Competition</em>, 2022; <em>China Robot Competition/Robocup China</em>, 2023
-          <br>
-          
-          <a href="https://ssl.robocup.org/">Introduction</a> / <a href="images/robocup-video1.mp4">video1</a> / <a href="images/robocup-video-non-zero-speed-ball-interception.mp4">video2</a>
-          <p>
-          During my year in the team, I was responsible for developing the muti-vehicle-ball-passing-point calculating module based on OpenAcc.
-          I'm also responsible for refining the ball interception module and completing the mapping from velocity to force to achieve the regulation of ball speed.
-          </p>
-        </td>
-      </tr>
 
-      <!----------- aerial robot --------->
-      <!-- <tr onmouseout="aerial_stop()" onmouseover="aerial_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='aerial'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/aerial.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <div id="aerial_still">
-            <img src='images/aerial.png' width="160" >
-            </div>
-          </div>
-          <script type="text/javascript">
-            function aerial_start() {
-              document.getElementById('aerial').style.opacity = "1";
-              document.getElementById('aerial_still').style.display = 'none';
-            }
-
-            function aerial_stop() {
-              document.getElementById('aerial').style.opacity = "0";
-              document.getElementById('aerial_still').style.display = 'inline';
-            }
-            aerial_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle"><font color="blue">(ONGOING)</font> Aerial Robot</span>
-          <br>
-          Advised by Prof. <a href="http://zju-fast.com/fei-gao/">Fei Gao</a> and Senior <a href="https://github.com/ModernGangster">Tianyue Wu</a>
-          <br>
-          <p></p>
-          <p>
-            We have preliminarily completed a reinforcement learning-based upper layer planning algorithm for UAVs, 
-            which realizes adaptive variable-speed flight of UAVs in complex environments.
-          </p>
-        </td>
-      </tr> -->
-
-      <!----------- quadruped robot --------->
-      <tr onmouseout="quadruped_stop()" onmouseover="quadruped_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='quadruped'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/quadruped.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <div id="quadruped_still">
-            <img src='images/quadruped.png' width="160" >
-            </div>
-          </div>
-          <script type="text/javascript">
-            function quadruped_start() {
-              document.getElementById('quadruped').style.opacity = "1";
-              document.getElementById('quadruped_still').style.display = 'none';
-            }
-
-            function quadruped_stop() {
-              document.getElementById('quadruped').style.opacity = "0";
-              document.getElementById('quadruped_still').style.display = 'inline';
-            }
-            quadruped_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <!-- change the ongoing color to blue -->
-          <span class="papertitle"><font color="blue">(ONGOING)</font> Quadruped Robot</span>
-          <br>
-          Advised by Prof. <a href="https://ywang-zju.github.io/">Yue Wang</a> and Senior <a href="https://github.com/TwilightZrui/">Rui Zhang</a>
-          <br>
-          <p></p>
-          <p>
-          We realized online COM trajectory and foothold optimization for quadruped locomotion. Besides, we proposed an end-to-end trajectory and foothold planning method based on single frame vision and reinforcement learning for quadruped robot.
-          </p>
-        </td>
-      </tr>
 
       <!---------- robot_nav ---------->
       <tr onmouseout="nav_stop()" onmouseover="nav_start()">
@@ -336,7 +338,7 @@
             <tr>
               <!-- <td style="padding:20px;width:15%;vertical-align:middle"><img src="images/award1.jpg" width="100%"></td> -->
               <td width="75%" valign="center">
-                China Robot Competition/Robocup China (SSL) - Second Prize  
+                China Robot Competition / Robocup China Open (SSL) - Second Prize  
               </td>
               <td width="10%" valign="center">
                 11/2022

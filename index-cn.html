@@ -64,7 +64,115 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+       
+             <!----------- aerial robot --------->
+      <!-- <tr onmouseout="aerial_stop()" onmouseover="aerial_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='aerial'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/aerial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <div id="aerial_still">
+            <img src='images/aerial.png' width="160" >           
+            </div>
+          </div>
+          <script type="text/javascript">
+            function aerial_start() {
+              document.getElementById('aerial').style.opacity = "1";
+              document.getElementById('aerial_still').style.display = 'none';
+            }
+
+            function aerial_stop() {
+              document.getElementById('aerial').style.opacity = "0";
+              document.getElementById('aerial_still').style.display = 'inline';
+            }
+            aerial_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle"><font color="blue">（正在进行）</font>无人机</span>
+          <br>
+          指导老师： <a href="http://zju-fast.com/fei-gao/">高飞</a>，指导学长：<a href="https://github.com/ModernGangster">巫天越</a>
+          <br>
+          <p></p>
+          <p>
+          我们初步完成了基于强化学习的无人机上层规划算法，实现了复杂环境中的无人机自适应变速飞行。
+          </p>
+        </td>
+      </tr> -->
+
+
+      <!----------- quadruped robot --------->
+      <tr onmouseout="quadruped_stop()" onmouseover="quadruped_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='quadruped'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/quadruped.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <div id="quadruped_still">
+            <img src='images/quadruped.png' width="160" >
+            </div>
+          </div>
+          <script type="text/javascript">
+            function quadruped_start() {
+              document.getElementById('quadruped').style.opacity = "1";
+              document.getElementById('quadruped_still').style.display = 'none';
+            }
+
+            function quadruped_stop() {
+              document.getElementById('quadruped').style.opacity = "0";
+              document.getElementById('quadruped_still').style.display = 'inline';
+            }
+            quadruped_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <!-- change the ongoing color to blue -->
+          <span class="papertitle"><font color="blue">（正在进行）</font> 四足机器人 </span>
+          <br>
+          指导老师：<a href="https://ywang-zju.github.io/">王越</a>，指导学长：<a href="https://github.com/TwilightZrui/">张睿</a>
+          <br>
+          <p></p>
+          <p>
+            我们实现了四足机器人在线的质心轨迹与落足点优化，并提出了基于单帧视觉和强化学习方法的端到端落足点规划算法。
+          </p>
+        </td>
+      </tr>
+      
+      <!---------- zjunlict ---------->
+      <tr onmouseout="robocup_stop()" onmouseover="robocup_start()">
+        <td style="padding:20px;width: 25%;vertical-align:middle">
+          <div id='robocup' class='hidden'><img src="images/robocup.gif" width="100%"></div>
+          <div id='robocupstill'>
+            <a href="images/robocup.gif"><img src="images/robocup.png" width="100%"></a>
+          </div>
+          <script type="text/javascript">
+            function robocup_start() {
+              document.getElementById('robocup').style.display = 'inline';
+              document.getElementById('robocupstill').style.display = 'none';
+            }
+
+            function robocup_stop() {
+              document.getElementById('robocup').style.display = 'none';
+              document.getElementById('robocupstill').style.display = 'inline';
+            }
+            robocup_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">足球机器人</span>
+          <br>
+          <em>浙江省大学生机器人竞赛</em>， 2022； <em>中国机器人大赛暨Robocup中国赛</em>， 2023
+          <br>
           
+          <a href="https://ssl.robocup.org/">比赛介绍</a> / <a href="images/robocup-video1.mp4">视频1</a> / <a href="images/robocup-video-non-zero-speed-ball-interception.mp4">视频2</a>
+          <p>
+          在队期间，我负责开发基于OpenAcc的多车球传点计算模块。我还负责完善截球模块，并完成了速度到力的映射，实现了对球速的规整。
+          </p>
+        </td>
+      </tr>
          
       
       <!-------------------- CICT ---------------->
@@ -143,114 +251,8 @@
         </td>
       </tr>
 
-      <!---------- zjunlict ---------->
-      <tr onmouseout="robocup_stop()" onmouseover="robocup_start()">
-        <td style="padding:20px;width: 25%;vertical-align:middle">
-          <div id='robocup' class='hidden'><img src="images/robocup.gif" width="100%"></div>
-          <div id='robocupstill'>
-            <a href="images/robocup.gif"><img src="images/robocup.png" width="100%"></a>
-          </div>
-          <script type="text/javascript">
-            function robocup_start() {
-              document.getElementById('robocup').style.display = 'inline';
-              document.getElementById('robocupstill').style.display = 'none';
-            }
-
-            function robocup_stop() {
-              document.getElementById('robocup').style.display = 'none';
-              document.getElementById('robocupstill').style.display = 'inline';
-            }
-            robocup_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">足球机器人</span>
-          <br>
-          <em>浙江省大学生机器人竞赛</em>， 2022； <em>中国机器人大赛暨Robocup中国赛</em>， 2023
-          <br>
-          
-          <a href="https://ssl.robocup.org/">比赛介绍</a> / <a href="images/robocup-video1.mp4">视频1</a> / <a href="images/robocup-video-non-zero-speed-ball-interception.mp4">视频2</a>
-          <p>
-          在队期间，我负责开发基于OpenAcc的多车球传点计算模块。我还负责完善截球模块，并完成了速度到力的映射，实现了对球速的规整。
-          </p>
-        </td>
-      </tr>
       
-      <!----------- aerial robot --------->
-      <!-- <tr onmouseout="aerial_stop()" onmouseover="aerial_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='aerial'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/aerial.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <div id="aerial_still">
-            <img src='images/aerial.png' width="160" >
-            </div>
-          </div>
-          <script type="text/javascript">
-            function aerial_start() {
-              document.getElementById('aerial').style.opacity = "1";
-              document.getElementById('aerial_still').style.display = 'none';
-            }
-
-            function aerial_stop() {
-              document.getElementById('aerial').style.opacity = "0";
-              document.getElementById('aerial_still').style.display = 'inline';
-            }
-            aerial_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle"><font color="blue">（正在进行）</font>无人机</span>
-          <br>
-          指导老师： <a href="http://zju-fast.com/fei-gao/">高飞</a>，指导学长：<a href="https://github.com/ModernGangster">巫天越</a>
-          <br>
-          <p></p>
-          <p>
-          我们初步完成了基于强化学习的无人机上层规划算法，实现了复杂环境中的无人机自适应变速飞行。
-          </p>
-        </td>
-      </tr> -->
-
-
-      <!----------- quadruped robot --------->
-      <tr onmouseout="quadruped_stop()" onmouseover="quadruped_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='quadruped'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/quadruped.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <div id="quadruped_still">
-            <img src='images/quadruped.png' width="160" >
-            </div>
-          </div>
-          <script type="text/javascript">
-            function quadruped_start() {
-              document.getElementById('quadruped').style.opacity = "1";
-              document.getElementById('quadruped_still').style.display = 'none';
-            }
-
-            function quadruped_stop() {
-              document.getElementById('quadruped').style.opacity = "0";
-              document.getElementById('quadruped_still').style.display = 'inline';
-            }
-            quadruped_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <!-- change the ongoing color to blue -->
-          <span class="papertitle"><font color="blue">（正在进行）</font> 四足机器人 </span>
-          <br>
-          指导老师：<a href="https://ywang-zju.github.io/">王越</a>，指导学长：<a href="https://github.com/TwilightZrui/">张睿</a>
-          <br>
-          <p></p>
-          <p>
-            我们实现了四足机器人在线的质心轨迹与落足点优化，并提出了基于单帧视觉和强化学习方法的端到端落足点规划算法。
-          </p>
-        </td>
-      </tr>
+     
 
       <!---------- robot_nav ---------->
       <tr onmouseout="nav_stop()" onmouseover="nav_start()">
